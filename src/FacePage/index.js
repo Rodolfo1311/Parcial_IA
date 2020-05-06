@@ -21,7 +21,7 @@ import filtro12 from './icono/s12.svg'
 import filtro13 from './icono/s13.svg'
 import filtro14 from './icono/s14.svg'
 import filtro15 from './icono/s15.svg'
-
+// Rodolfo Vásquez Javier 
 class FacePage extends Component {
     constructor(props) {
         super(props);
