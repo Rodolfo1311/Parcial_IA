@@ -8,9 +8,12 @@ A continuación se muestra un ejemplo del funcionamiento:
 
  segundo prueba ya con mas filtros 
  
- 
+
+![segundo](https://user-images.githubusercontent.com/64815890/81237054-d1d0cd80-8fbb-11ea-9529-999d323362eb.jpg)
+
  tercera prueba un poco mas limpio 
  
+![tercero](https://user-images.githubusercontent.com/64815890/81237053-d1383700-8fbb-11ea-958d-328fa8a6dbc5.jpg)
 
 # Teconolgias usadas
 
