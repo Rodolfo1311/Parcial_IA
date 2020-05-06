@@ -6,6 +6,10 @@ A continuación se muestra un ejemplo del funcionamiento:
 
 ![primera](https://user-images.githubusercontent.com/64815890/81236125-b9f84a00-8fb9-11ea-9828-339f2c45ee70.jpg)
 
+ segundo prueba ya con mas filtros 
+ 
+ 
+ tercera prueba un poco mas limpio 
  
 
 # Teconolgias usadas
