@@ -6,7 +6,6 @@ import mapDispatchToProps from './mapDispatchToProps';
 import Camera from './Camera';
 import Canva from './Canva';
 import * as faceapi from 'face-api.js';
-import ScrollButton from './ScrollButton';
 
 class FacePage extends Component {
     constructor(props) {
@@ -23,7 +22,6 @@ class FacePage extends Component {
         }
         this.setVideoHandler = this.setVideoHandler.bind(this);
         this.isModelLoaded = this.isModelLoaded.bind(this);
-        this.switchFilter = this.switchFilter.bind(this);
     }
 
     async setVideoHandler() {
@@ -34,8 +32,8 @@ class FacePage extends Component {
                     console.log("face detected", 1);
                     const dims = faceapi.matchDimensions(this.props.canvas.current, this.props.video.current, true);
                     const resizedResult = faceapi.resizeResults(result, dims);
-                    faceapi.draw.drawDetections(this.props.canvas.current, resizedResult);
-                    faceapi.draw.drawFaceLandmarks(this.props.canvas.current, resizedResult);
+ //para no mostrar el cuadro                  // faceapi.draw.drawDetections(this.props.canvas.current, resizedResult);
+ //para no mostrar los puntos                  // faceapi.draw.drawFaceLandmarks(this.props.canvas.current, resizedResult);
 
                     const currentCanvas = ReactDOM.findDOMNode(this.props.canvas.current);
                     var canvasElement = currentCanvas.getContext("2d");
@@ -55,7 +53,9 @@ class FacePage extends Component {
         setTimeout(() => this.setVideoHandler());
     }
 
-    addBoxIndexOfLandmark(canvasElement, landkmarkPosition) {
+
+    //se comento esto para o mostrar el cuadrito que recorre los lamdmarks
+    /*addBoxIndexOfLandmark(canvasElement, landkmarkPosition) {
         let width = 10, height = 10;
         canvasElement.setTransform(1, 0, 0, 1, 0, 0);
         canvasElement.fillStyle = 'rgb(255, 87, 51)';
@@ -63,7 +63,7 @@ class FacePage extends Component {
         canvasElement.closePath();
         canvasElement.setTransform(1, 0, 0, 1, 0, 0);
     }
-
+*/
     addBackgroundInformation(canvasElement, result) {
         let positionX = result.landmarks.positions[8].x,
             positionY = result.landmarks.positions[8].y + 10;
@@ -189,7 +189,7 @@ class FacePage extends Component {
 
 
     async componentDidUpdate() {
-        console.log('El estado ha cambiado')
+
         this.props.SET_VIDEO_HANDLER_IN_GAME_FACENET(this.setVideoHandler);
 
         // asignar los archivos del model a face-api
@@ -234,13 +234,6 @@ class FacePage extends Component {
         this.props.SET_DETECTOR_OPTIONS_IN_GAME_FACENET(options);
     }
 
-    switchFilter(e) {
-
-
-        this.setState({ filterName: e.target.value })
-        console.log(this.state.filterName)
-    }
-
     render() {
         return (
             <div>
@@ -268,9 +261,7 @@ class FacePage extends Component {
                 <button type="button" value='filtro14' onClick={(event) => { this.setState({ filterName: event.target.value }) }}>filtro14</button>
                 <button type="button" value='filtro15' onClick={(event) => { this.setState({ filterName: event.target.value }) }}>filtro15</button>
 
-                <h1>{this.state.filterName}</h1>
-
-                <ScrollButton />
+                
             </div>
         )
     }
