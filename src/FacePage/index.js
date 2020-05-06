@@ -6,6 +6,21 @@ import mapDispatchToProps from './mapDispatchToProps';
 import Camera from './Camera';
 import Canva from './Canva';
 import * as faceapi from 'face-api.js';
+import filtro1 from './icono/s1.svg'
+import filtro2 from './icono/s2.svg'
+import filtro3 from './icono/s3.svg'
+import filtro4 from './icono/s4.svg'
+import filtro5 from './icono/s5.svg'
+import filtro6 from './icono/s6.svg'
+import filtro7 from './icono/s7.svg'
+import filtro8 from './icono/s8.svg'
+import filtro9 from './icono/s9.svg'
+import filtro10 from './icono/s10.svg'
+import filtro11 from './icono/s11.svg'
+import filtro12 from './icono/s12.svg'
+import filtro13 from './icono/s13.svg'
+import filtro14 from './icono/s14.svg'
+import filtro15 from './icono/s15.svg'
 
 class FacePage extends Component {
     constructor(props) {
@@ -245,21 +260,21 @@ class FacePage extends Component {
                     value={this.state.positionIndex}
                     onChange={(event) => { this.setState({ positionIndex: event.target.value }) }} />
 
-                <button type="button" value='filtro1' onClick={(event) => { this.setState({ filterName: event.target.value }) }}>filtro1</button>
-                <button type="button" value='filtro2' onClick={(event) => { this.setState({ filterName: event.target.value }) }}>filtro2</button>
-                <button type="button" value='filtro3' onClick={(event) => { this.setState({ filterName: event.target.value }) }}>filtro3</button>
-                <button type="button" value='filtro4' onClick={(event) => { this.setState({ filterName: event.target.value }) }}>filtro4</button>
-                <button type="button" value='filtro5' onClick={(event) => { this.setState({ filterName: event.target.value }) }}>filtro5</button>
-                <button type="button" value='filtro6' onClick={(event) => { this.setState({ filterName: event.target.value }) }}>filtro6</button>
-                <button type="button" value='filtro7' onClick={(event) => { this.setState({ filterName: event.target.value }) }}>filtro7</button>
-                <button type="button" value='filtro8' onClick={(event) => { this.setState({ filterName: event.target.value }) }}>filtro8</button>
-                <button type="button" value='filtro9' onClick={(event) => { this.setState({ filterName: event.target.value }) }}>filtro9</button>
-                <button type="button" value='filtro10' onClick={(event) => { this.setState({ filterName: event.target.value }) }}>filtro10</button>
-                <button type="button" value='filtro11' onClick={(event) => { this.setState({ filterName: event.target.value }) }}>filtro11</button>
-                <button type="button" value='filtro12' onClick={(event) => { this.setState({ filterName: event.target.value }) }}>filtro12</button>
-                <button type="button" value='filtro13' onClick={(event) => { this.setState({ filterName: event.target.value }) }}>filtro13</button>
-                <button type="button" value='filtro14' onClick={(event) => { this.setState({ filterName: event.target.value }) }}>filtro14</button>
-                <button type="button" value='filtro15' onClick={(event) => { this.setState({ filterName: event.target.value }) }}>filtro15</button>
+                <button type="button" value='filtro1' onClick={(event) => { this.setState({ filterName: event.target.value }) }}><img src={filtro1} width="20" height="20"></img>filtro1</button>
+                <button type="button" value='filtro2' onClick={(event) => { this.setState({ filterName: event.target.value }) }}><img src={filtro2} width="20" height="20"></img>filtro2</button>
+                <button type="button" value='filtro3' onClick={(event) => { this.setState({ filterName: event.target.value }) }}><img src={filtro3} width="20" height="20"></img>filtro3</button>
+                <button type="button" value='filtro4' onClick={(event) => { this.setState({ filterName: event.target.value }) }}><img src={filtro4} width="20" height="20"></img>filtro4</button>
+                <button type="button" value='filtro5' onClick={(event) => { this.setState({ filterName: event.target.value }) }}><img src={filtro5} width="20" height="20"></img>filtro5</button>
+                <button type="button" value='filtro6' onClick={(event) => { this.setState({ filterName: event.target.value }) }}><img src={filtro6} width="20" height="20"></img>filtro6</button>
+                <button type="button" value='filtro7' onClick={(event) => { this.setState({ filterName: event.target.value }) }}><img src={filtro7} width="20" height="20"></img>filtro7</button>
+                <button type="button" value='filtro8' onClick={(event) => { this.setState({ filterName: event.target.value }) }}><img src={filtro8} width="20" height="20"></img>filtro8</button>
+                <button type="button" value='filtro9' onClick={(event) => { this.setState({ filterName: event.target.value }) }}><img src={filtro9} width="20" height="20"></img>filtro9</button>
+                <button type="button" value='filtro10' onClick={(event) => { this.setState({ filterName: event.target.value }) }}><img src={filtro10} width="20" height="20"></img>filtro10</button>
+                <button type="button" value='filtro11' onClick={(event) => { this.setState({ filterName: event.target.value }) }}><img src={filtro11} width="20" height="20"></img>filtro11</button>
+                <button type="button" value='filtro12' onClick={(event) => { this.setState({ filterName: event.target.value }) }}><img src={filtro12} width="20" height="20"></img>filtro12</button>
+                <button type="button" value='filtro13' onClick={(event) => { this.setState({ filterName: event.target.value }) }}><img src={filtro13} width="20" height="20"></img>filtro13</button>
+                <button type="button" value='filtro14' onClick={(event) => { this.setState({ filterName: event.target.value }) }}><img src={filtro14} width="20" height="20"></img>filtro14</button>
+                <button type="button" value='filtro15' onClick={(event) => { this.setState({ filterName: event.target.value }) }}><img src={filtro15} width="20" height="20"></img>filtro15</button>
 
                 
             </div>
