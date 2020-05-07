@@ -15,6 +15,11 @@ A continuación se muestra un ejemplo del funcionamiento:
  
 ![tercero](https://user-images.githubusercontent.com/64815890/81237053-d1383700-8fbb-11ea-958d-328fa8a6dbc5.jpg)
 
+incluyendo iconos en los botones
+
+![mejorando](https://user-images.githubusercontent.com/64815890/81240695-55db8300-8fc5-11ea-94b7-bfd64ad8f3c1.jpg)
+
+
 # Teconolgias usadas
 
 1. [React js](https://es.reactjs.org/)
